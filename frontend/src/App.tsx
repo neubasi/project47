@@ -21,15 +21,12 @@ function App() {
         <a href="https://www.python.org/" target="_blank">
           <img src="/icons8-python.svg"  className="logo python" alt="Python logo" />
         </a>
-        <a href="https://flask.palletsprojects.com/en/2.1.x/" target="_blank">
-          <img src="/pocoo_flask-icon.svg"  className="logo flask" alt="Flask logo" />
-        </a>
         <a href="https://www.postgresql.org/" target="_blank">
           <img src="/postgresql-icon.svg"  className="logo postgresql" alt="Postgresql logo" />
         </a>
 
       </div>
-      <h2>Vite + React + Python + Flask + PostgreSQL</h2>
+      <h2>Vite + React + Python +  PostgreSQL</h2>
        {/* H
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
