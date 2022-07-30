@@ -8,4 +8,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(ssl_context=('/etc/letsencrypt/csr/0000_csr-certbot.pem', '/etc/letsencrypt/keys/0000_key-certbot.pem'), threaded=True, port=5000)
+    app.run(ssl_context=('/etc/letsencrypt/live/www.hy1dra.com/fullchain.pem', '/etc/letsencrypt/live/www.hy1dra.com/privkey.pem'), threaded=True, port=5000)
