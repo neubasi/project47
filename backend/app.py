@@ -8,4 +8,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(threaded=True, port=5000)
+    app.run(ssl_context=('/etc/letsencrypt/csr/0000_csr-certbot.pem', '/etc/letsencrypt/keys/0000_key-certbot.pem'), threaded=True, port=5000)
