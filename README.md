@@ -1,2 +1,2 @@
 # project47
-New Experiments Show Consciousness Affects Matter
+Experimentelle Forschung ob das Bewusstsein Auswirkung auf die Generierung von Pseudo-Zufallszahlen hat.
