@@ -15,7 +15,7 @@ function App() {
       const result = await response.json();
       setData(result);
     } catch (err: any) {
-      setErr(err.message);
+      setErr(err);
     }
   };
 
