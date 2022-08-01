@@ -1,11 +1,16 @@
 from flask import Flask
+from flask_cors import CORS
+from datetime import datetime
 
-app = Flask(__name__, static_folder='dist', static_url_path='')
-
-@app.route('/')
-def index():
-    return app.send_static_file('index.html')
+app = Flask(__name__)
+CORS(app)
 
 
+@app.route('/getData')
+def getData():
+    return {'data': datetime.now().strftime("%d.%m.%Y, %H:%M:%S:%f") + " Hello from Python Backend..."}
+
+
+    # Running app
 if __name__ == '__main__':
-    app.run(ssl_context=('/etc/letsencrypt/live/www.hy1dra.com/fullchain.pem', '/etc/letsencrypt/live/www.hy1dra.com/privkey.pem'), threaded=True, port=5000)
+    app.run(debug=True, port=5001)
