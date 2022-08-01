@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy":"https://localhost:5001",
-  
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^0.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
