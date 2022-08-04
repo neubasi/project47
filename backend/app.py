@@ -1,11 +1,9 @@
 from flask import Flask
 from flask_cors import CORS
 from datetime import datetime
-from flask_talisman import Talisman
 
 app = Flask(__name__)
 CORS(app)
-Talisman(app)
 
 
 @app.route('/getData')
