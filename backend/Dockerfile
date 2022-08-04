@@ -9,4 +9,5 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD [ "flask", "run" , "-p",  "5001", "--cert=cert.pem", "--key=key.pem","--host=0.0.0.0"]
+#CMD [ "flask", "run" , "-p",  "5001", "--cert=cert.pem", "--key=key.pem","--host=0.0.0.0"]
+CMD [ "flask", "run" , "-p",  "5001", "--host=0.0.0.0"]
