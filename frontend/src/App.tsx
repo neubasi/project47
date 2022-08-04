@@ -8,7 +8,7 @@ function App() {
 
   const handleClick = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5001/getData');
+      const response = await fetch('https://127.0.0.1:5001/getData');
       if (!response.ok) {
         throw new Error(`Error! status: ${response.status}`);
       }
