@@ -18,6 +18,7 @@ export class SelectionComponent extends React.Component {
         <h1>Bitte wähle deine Gruppe.</h1>
 
         <div style={{display:"flex", flexDirection: "column"}}>
+        <Link to="/code">
             <Card style={{textAlign: "left", margin: "1rem"}}>
             <CardActionArea>
               <CardContent>
@@ -34,6 +35,7 @@ export class SelectionComponent extends React.Component {
               </CardContent>
             </CardActionArea>
           </Card>
+          </Link>
           <Card style={{textAlign: "left", margin: "1rem"}}>
             <CardActionArea>
               <CardContent>
