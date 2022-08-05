@@ -61,7 +61,8 @@ export class SelectionComponent extends React.Component {
                   Gruppen-Mediator
                 </Typography></div>
                 <Typography variant="body2" color="text.secondary">
-                  Gemeinsam sind wir stark! 
+                  Ein Individuum kann viel erreichen. <br></br>
+                  Gemeinsam sind wir stärker! <br></br>
                 </Typography>
               </CardContent>
             </CardActionArea>
