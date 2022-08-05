@@ -19,5 +19,16 @@ export function Run() {
   }, [cooldown]);
 
 
-  return <h1 style={{ fontSize: "15rem" }}>{cooldown && cooldown !== 0}</h1>
+  return (
+    <div>
+      {
+        cooldown > 0 ? <h1 style={{ fontSize: "15rem" }}>{cooldown}</h1> : 
+        <div style={{ height: "400px" , width: "800px", background:"blue", transform: "scale(1)",
+        animation: "pulse 2s infinite"}}></div>
+      }
+    </div>
+
+
+
+  )
 }

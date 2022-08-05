@@ -15,7 +15,7 @@ export function Choice() {
   return (
     <ThemeProvider theme={theme}>
    
-    <h1>Entscheide dich für 0 oder 1.</h1>
+    <h1>Entscheide dich für 0 oder 1.{value} </h1>
     <FormControl>
       <RadioGroup
         aria-labelledby="demo-controlled-radio-buttons-group"
