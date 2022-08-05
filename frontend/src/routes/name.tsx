@@ -17,13 +17,13 @@ export class NameComponent extends React.Component {
           <h1>Bitte Namen eingeben.</h1>
           <TextField fullWidth autoFocus={true} label="Name" placeholder="Alice im Wunderland" id="Name" />
 
-<div style={{display: "flex", justifyContent: "space-between", marginTop: "2rem"}}>
-          <Link to="/code">
-            <Button variant="outlined">Zurück</Button>
-          </Link>
-          <Link to="/instruction">
-            <Button variant="contained">Weiter</Button>
-          </Link>
+          <div style={{ display: "flex", justifyContent: "space-between", marginTop: "2rem" }}>
+            <Link to="/code">
+              <Button variant="outlined">Zurück</Button>
+            </Link>
+            <Link to="/instruction">
+              <Button variant="contained">Weiter</Button>
+            </Link>
           </div>
         </div>
       </ThemeProvider>
