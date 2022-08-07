@@ -1,30 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup/ButtonGroup';
-import { createTheme, ThemeProvider } from '@mui/material';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { SelectionComponent } from './routes/selection';
-
-
-export const theme = createTheme({
-  palette: {
-    primary: {
-      light: '#484848',
-      main: '#212121',
-      dark: '#000000',
-      contrastText: '#fff',
-    },
-    secondary: {
-      light: '#ff7961',
-      main: '#f44336',
-      dark: '#ba000d',
-      contrastText: '#000',
-    },
-  },
-});
-
+import './App.css';
 
 function App() {
   const [data, setData] = useState({ data: "" });
@@ -45,18 +22,14 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <div>
       <h1>Experimentelle Forschung.</h1>
       <h2>Auswirkungen des Bewusstsein von Mediatoren auf die Generierung von Pseudo-Zufallszahlen.</h2>
     <br></br>
-    <Link to="/selection">
+    <Link to="/code">
       <Button variant="outlined">Los geht's.</Button>
       </Link>
-
-    
-
-</ThemeProvider>
-
+      </div>
   )
 }
 
