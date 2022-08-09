@@ -10,7 +10,7 @@ export function Instruction() {
         <h2>2. Konzentriere dich 10 Sekunden lang auf deine Zahl und versuche die Zufallsgenerierung mit deiner Zahl zu beeinflussen.</h2>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: "2rem" }}>
-        <Link to="/name">
+        <Link to="/selection">
           <Button variant="outlined">Zurück</Button>
         </Link>
         <Link to="/choice">

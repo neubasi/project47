@@ -23,8 +23,9 @@ function App() {
 
   return (
     <div>
-      <h1>Experimentelle Forschung.</h1>
-      <h2>Auswirkungen des Bewusstsein von Mediatoren auf die Generierung von Pseudo-Zufallszahlen.</h2>
+      <code style={{fontWeight: "600", letterSpacing: "3px"}}>SERVICE: <span style={{backgroundColor: "red", color: "white"}}>OFFLINE</span></code>
+      <h1 style={{letterSpacing: "3px"}}>Experimentelle Forschung.</h1>
+      <h3>Auswirkungen des Bewusstsein von Mediatoren auf die Generierung von Pseudo-Zufallszahlen.</h3>
     <br></br>
     <Link to="/code">
       <Button variant="outlined">Los geht's.</Button>
