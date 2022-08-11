@@ -10,7 +10,7 @@ export function Choice() {
   };
   return (
     <div>
-      <h1>Entscheide dich für 0 oder 1</h1>
+      <h1>Wähle 0 oder 1</h1>
       <FormControl>
         <RadioGroup
           aria-labelledby="demo-controlled-radio-buttons-group"
@@ -20,12 +20,12 @@ export function Choice() {
         >
           <FormControlLabel value="0" control={<Radio sx={{
             '& .MuiSvgIcon-root': {
-              fontSize: 50,
+              fontSize: 40,
             },
           }} />} label="0" />
           <FormControlLabel value="1" control={<Radio sx={{
             '& .MuiSvgIcon-root': {
-              fontSize: 50,
+              fontSize: 40,
             },
           }} />} label="1" />
         </RadioGroup>

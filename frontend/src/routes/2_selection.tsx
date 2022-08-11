@@ -11,7 +11,7 @@ export function SelectionOverview() {
   return (
     <div>
       <h1>Bitte wähle deine Gruppe.</h1>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div style={{ display: "flex", flexDirection: "column", maxWidth: "500px" }}>
         <SelectionCard link="/instruction" icon={() => <PersonIcon />} titel="Normal" text="Du bist ein ganz normaler Mensch. Keine Panik! Das bedeutet nichts Negatives. Lehne dich entspannt zurück und nehme am Experiment teil."> </SelectionCard>
         <SelectionCard link="/instruction" icon={() => <RecordVoiceOverIcon />} titel="Meditator" text="Du glaubst, dass du das Ergebnis des Experiments mit deinem Bewusstsein beeinflussen kannst? Wenn ja, dann wähle mich aus!"> </SelectionCard>
         <SelectionCard link="/instruction" icon={() => <GroupIcon />} titel="Gruppen-Mediator" text=" Ein Individuum kann viel erreichen. Gemeinsam sind wir stärker! <br></br>"> </SelectionCard>
@@ -33,7 +33,7 @@ function SelectionCard(props: { children: React.ReactNode, link: string, titel: 
                           <div style={{ display: "flex" }}>
                               <div style={{ marginRight: "1rem" }}>
                                   {React.createElement(props.icon)}</div>
-                              <Typography gutterBottom variant="h5" component="div">
+                              <Typography gutterBottom variant="h6" component="div">
                                   {props.titel}
                               </Typography></div>
                           <Typography variant="body2" color="text.secondary">
