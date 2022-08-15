@@ -41,7 +41,7 @@ function App() {
 function Api() {
   const [theArray, setTheArray] = useState(Array<any>);
   const handleClick = async () => {
-    const client = new W3CWebSocket('ws://localhost:8765');
+    const client = new W3CWebSocket('wss://127.0.0.1:8765');
     client.onopen = () => {
       console.log('WebSocket Client Connected');
     };
