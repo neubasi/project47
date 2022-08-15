@@ -8,6 +8,7 @@ import time
 import websockets
 import threading
 import datetime, time
+import ssl
 
 async def echo(websocket):
     then = datetime.datetime.now() + datetime.timedelta(seconds=10)
@@ -42,11 +43,18 @@ async def main():
     stop = loop.create_future()
     loop.add_signal_handler(signal.SIGTERM, stop.set_result, None)
 
+    ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+    ssl_cert = "/etc/letsencrypt/live/hy1dra.com/fullchain.pem"
+    ssl_key = "/etc/letsencrypt/live/hy1dra.com/privkey.pem"
+
+    ssl_context.load_cert_chain(ssl_cert, keyfile=ssl_key)
+
     async with websockets.serve(
         echo,
         host="",
         port=8765,
         process_request=health_check,
+        ssl=ssl_context
     ):
         await stop
 
